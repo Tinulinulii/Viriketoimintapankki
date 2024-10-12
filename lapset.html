@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapset</title>
+    <link rel="stylesheet" href="tyyli2.css">
+</head>
+<body>
+    <!-- Top Navigation for Desktop -->
+    <div class="topnav">
+        <div class="logo">Viriketoimintapankki</div>
+        <div class="nav-links">
+            <a href="index.html">Etusivu</a>
+            <a href="lapset.html" class="active">Lasten kanssa</a>
+            <a href="vammaiset.html">Vammaistyössä</a>
+            <a href="vanhus.html">Ikäihmisten kanssa</a>
+            <a href="merkitys.html">Viriketoiminnan merkitys</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <main>
+        <header class="content-header">
+            <h1>Lasten kanssa</h1>
+            <div class="image-description">
+                <img src="lapsi.jpg" alt="Lapsi" class="main-image">
+                <p class="description">Lasten viriketoiminta tarjoaa mahdollisuuden kehittää lasten fyysisiä, sosiaalisia ja kognitiivisia taitoja turvallisessa ja kannustavassa ympäristössä. Ohjaajana on tärkeää luoda turvallinen ilmapiiri, jossa lapset voivat osallistua monipuolisiin aktiviteetteihin ja ilmaista itseään. Osallistaminen ja positiivinen ilmapiiri tekevät viriketoiminnasta mielekästä ja kehittävää. Anna siis lasten osallistua myös itse toiminnan suunnitteluun. Ole valmis muuttamaan toimintaa heidän ideoidensa pohjalta. </p>
+            </div>
+        </header>
+
+        <section class="box-grid">
+           
+            <div class="box"><a href="https://viitotturakkaus.fi/"><h2>Viitottu rakkaus</h2>
+                <ul>
+                    <li>Tulostettavia materiaaleja</li>
+                    <li>Pedagoginen materiaali</li>
+                    
+                </ul></a></div>
+
+            <div class="box"><a href="https://www.varinautit.fi/"><h2>Värinautit</h2>
+            <ul>
+                <li>Tulostettavia materiaaleja ja sovelluksia</li>
+                <li>Pedagoginen materiaali</li>
+                
+            </ul></a></div>
+            <div class="box"><a href="https://ilokasvaaulkona.fi/"><h2>Ilo kasvaa ulkona</h2>
+            <ul>
+                <li>Ideoita ja materiaaleja luontotoimintaan
+                </li>
+              
+                
+            </ul></a></div>
+            <div class="box"><a href="https://www.leikkipankki.fi/haku"><h2>Leikkipankki</h2>
+                <ul>
+                    <li>Leikkejä ja vinkkejä yhdessäoloon
+                    </li>
+                </ul></a></div></a></div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Mobile Menu -->
+    <div class="menu-icon">&#9776;</div>
+    <div id="nav-links" class="nav-links-mobile">
+        <a href="index.html">Etusivu</a>
+        <a href="lapset.html">Lasten kanssa</a>
+        <a href="vammaiset.html">Vammaistyössä</a>
+        <a href="vanhus.html">Ikäihmisten kanssa</a>
+        <a href="merkitys.html">Viriketoiminnan merkitys</a>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('#nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>

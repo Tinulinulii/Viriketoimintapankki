@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanhus</title>
+    <link rel="stylesheet" href="tyyli2.css">
+</head>
+<body>
+    <!-- Top Navigation for Desktop -->
+    <div class="topnav">
+        <div class="logo">Viriketoimintapankki </div>
+        <div class="nav-links">
+            <a href="index.html">Etusivu</a>
+            <a href="lapset.html" >Lasten kanssa</a>
+            <a href="vammaiset.html">Vammaistyössä</a>
+            <a href="vanhus.html"class="active">Ikäihmisten kanssa</a>
+            <a href="merkitys.html">Viriketoiminnan merkitys</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <main>
+        <header class="content-header">
+            <h1>Ikäihmisten kanssa</h1>
+            <div class="image-description">
+                <img src="vanhus.jpg" alt="Vanhus" class="main-image">
+                <p class="description">
+                                    
+                    Ikäihmisten viriketoiminta on tärkeä osa ikäihmisten hyvinvointia ja elämänlaatua, ja se keskittyy tarjoamaan osallistavia, mielekkäitä aktiviteetteja, jotka tukevat fyysistä ja psyykkistä terveyttä. Viriketoiminnan tarkoituksena on edistää sosiaalista vuorovaikutusta, itsenäisyyttä ja osallisuutta, mikä on erityisen tärkeää ikäihmisten elämänvaiheessa. Monipuoliset aktiviteetit, kuten kulttuuri-, liikunta- ja käsityötoiminta, tarjoavat mahdollisuuksia itseilmaisuun ja yhteisöllisyyteen.</p>
+            </div>
+        </header>
+
+        <section class="box-grid">
+            <div class="box"><a href="https://ryhmarenki.fi/"><h2>Ryhmärenki</h2>
+                <ul>
+                    <li>Monipuolinen vinkkisivusto ryhmien ohjaamiseen
+                    </li>
+                
+                    
+                </ul></a></div>
+
+            <div class="box"><a href="https://vahvike.fi/"><h2>Vahvike</h2>
+            <ul>
+                <li>Ryhmä- ja viriketoiminnan aineistopankki
+                </li>
+              
+                
+            </ul></a></div>
+            <div class="box"><a href="https://www.muistipuisto.fi/"><h2>Muistipuisto</h2>
+            <ul>
+                <li>Aivoterveyttä tukevaa tietoa, tekemistä ja käytännön vinkkejä
+
+                </li>
+              
+            </ul></a></div>
+            <div class="box"><a href="https://ikaopisto.fi/"><h2>Ikäopisto</h2>
+                <ul>
+                    <li>Tietoa ja tehtäviä mielen hyvinvointiin
+
+                    </li>
+                </ul></a></div></a></div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Mobile Menu -->
+    <div class="menu-icon">&#9776;</div>
+    <div id="nav-links" class="nav-links-mobile">
+        <a href="index.html">Etusivu</a>
+        <a href="lapset.html">Lasten kanssa</a>
+        <a href="vammaiset.html">Vammaistyössä</a>
+        <a href="vanhus.html">Ikäihmisten kanssa</a>
+        <a href="merkitys.html">Viriketoiminnan merkitys</a>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('#nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>

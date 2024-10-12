@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vammaiset</title>
+    <link rel="stylesheet" href="tyyli2.css">
+</head>
+<body>
+    <!-- Top Navigation for Desktop -->
+    <div class="topnav">
+        <div class="logo">Viriketoimintapankki</div>
+        <div class="nav-links">
+            <a href="index.html">Etusivu</a>
+            <a href="lapset.html" >Lasten kanssa</a>
+            <a href="vammaiset.html"class="active">Vammaistyössä</a>
+            <a href="vanhus.html">Ikäihmisten kanssa</a>
+            <a href="merkitys.html">Viriketoiminnan merkitys</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <main>
+        <header class="content-header">
+            <h1>Vammaistyössä</h1>
+            <div class="image-description">
+                <img src="vammaistyo.jpg" alt="Vammaistyö" class="main-image">
+                <p class="description">Vammaistyön viriketoiminta keskittyy osallistavien ja mielekkäiden aktiviteettien tarjoamiseen, jotka tukevat vammaisten henkilöiden hyvinvointia ja elämänlaatua. Ohjaajana on tärkeää huomioida osallistujien yksilölliset tarpeet ja toiveet, jotta jokainen voi kokea onnistumisen iloa ja kehittää omia taitojaan. Monipuoliset aktiviteetit, kuten luova toiminta, liikunta ja sosiaalinen vuorovaikutus, luovat mahdollisuuksia yhteisöllisyyden vahvistamiseen ja itsenäisyyden lisäämiseen. Viriketoiminnassa on tärkeää edistää osallistujien itsenäisyyttä ja kykyjä sekä tarjota heille keinoja omien mielenkiin-non kohteidensa löytämiseen.</p>
+            </div>
+        </header>
+
+        <section class="box-grid">
+           
+            <div class="box"><a href="https://papunet.net/tietoa/toimintamalleja-ja-menetelmia/huomioivan-yhdessaolon-toimintamalli-hyp/"><h2>HYP</h2>
+                <ul>
+                   
+                    <li>Huomioiva yhdessä olo (HYP) -mallin esittely
+                    </li>
+                    <li>Tulostettava materiaali</li>
+                </ul></a></div>
+
+            <div class="box"><a href="https://papunet.net/"><h2>Papunet</h2>
+            <ul>
+                <li>Tietoa ja materiaaleja kommunikointiin
+                </li>
+                <li>Kuvapankki</li>
+                
+            </ul></a></div>
+            <div class="box"><a href="https://www.gcfinland.fi/"><h2>GreenCare</h2>
+            <ul>
+                <li>Luontolähtöisiä materiaaleja
+                </li>
+              
+                
+            </ul></a></div>
+            <div class="box"><a href="https://www.luontosivusto.fi/"><h2>Luontosivusto</h2>
+                <ul>
+                    <li>Luontoaiheisia tehtäviä
+
+
+                    </li>
+                </ul></a></div></a></div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Mobile Menu -->
+    <div class="menu-icon">&#9776;</div>
+    <div id="nav-links" class="nav-links-mobile">
+        <a href="index.html">Etusivu</a>
+        <a href="lapset.html">Lasten kanssa</a>
+        <a href="vammaiset.html">Vammaistyössä</a>
+        <a href="vanhus.html">Ikäihmisten kanssa</a>
+        <a href="merkitys.html">Viriketoiminnan merkitys</a>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('#nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merkitys</title>
+    <link rel="stylesheet" href="tyyli2.css">
+</head>
+<body>
+    <!-- Top Navigation for Desktop -->
+    <div class="topnav">
+        <div class="logo">Viriketoimintapankki</div>
+        <div class="nav-links">
+            <a href="index.html">Etusivu</a>
+            <a href="lapset.html" >Lasten kanssa</a>
+            <a href="vammaiset.html">Vammaistyössä</a>
+            <a href="vanhus.html">Ikäihmisten kanssa</a>
+            <a href="merkitys.html"class="active">Viriketoiminnan merkitys</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <main>
+        <header class="content-header">
+            <h1>Viriketoiminnan merkitys</h1>
+            <div class="image-description">
+                <img src="merkitys.jpg" alt="Merkitys" class="main-image">
+                <p class="description">Viriketoiminta on elintärkeä osa ihmisten hyvinvointia ja elämänlaatua. Se tarjoaa mahdollisuuksia osallistua monenlaisiin aktiviteetteihin, jotka tukevat fyysistä, psyykkistä ja sosiaalista terveyttä. Viri-ketoiminta edistää ihmisten aktiivista elämäntapaa, lisää yhteisöllisyyttä ja luo merkityksellisiä ko-kemuksia. Viriketoiminnan hyvinvointivaikutuksista on useita tutkimuksia ja artikkeleita. Tälle sivulle on koottu joitakin lähteitä, millaisia hyvinvointivaikutuksia viriketoiminnalla voi ihmiselle olla. </p>
+            </div>
+        </header>
+
+        <section class="box-grid">
+            <div class="box"><a href="#"><h2>Laatikko 1</h2><p>Kuvaus</p></a></div>
+            <div class="box"><a href="#"><h2>Laatikko 2</h2><p>Kuvaus</p></a></div>
+            <div class="box"><a href="#"><h2>Laatikko 3</h2><p>Kuvaus</p></a></div>
+            <div class="box"><a href="#"><h2>Laatikko 4</h2><p>Kuvaus</p></a></div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Mobile Menu -->
+    <div class="menu-icon">&#9776;</div>
+    <div id="nav-links" class="nav-links-mobile">
+        <a href="index.html">Etusivu</a>
+        <a href="lapset.html">Lasten kanssa</a>
+        <a href="vammaiset.html">Vammaistyössä</a>
+        <a href="vanhus.html">Ikäihmisten kanssa</a>
+        <a href="merkitys.html">Viriketoiminnan merkitys</a>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('#nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
