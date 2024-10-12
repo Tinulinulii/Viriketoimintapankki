@@ -1,0 +1,64 @@
+/* Yleiset tyylit */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: 'Open sans', sans-serif;
+    background-color: #fff4bd;
+    color: #000;
+    margin: 0;
+    padding: 50px;
+    text-align: left;
+}
+header {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+/* Työpöytänäkymässä suurempi marginaali */
+@media (min-width: 768px) {
+    header {
+        padding-left: 70px; /* Suurempi marginaali työpöytänäkymässä */
+        padding-right: 70px;
+    }
+}
+/* Kuvagallerian tyylit */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.image-box {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #887bb0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+/* Mobiilinäkymän tyylit */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
