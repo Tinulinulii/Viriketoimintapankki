@@ -1,32 +1,86 @@
-/* Yleiset tyylit */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
-    font-family: 'Open sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #fff4bd;
     color: #000;
     margin: 0;
-    padding: 50px;
+    padding: 0;
     text-align: left;
 }
-header {
-    margin: 20px 0;
+
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff4bd;
+    padding: 10px 50px;
 }
 
-h1 {
-    font-size: 2em;
+.topnav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-p {
+.topnav .nav-links a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
     font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
-/* Työpöytänäkymässä suurempi marginaali */
-@media (min-width: 768px) {
-    header {
-        padding-left: 70px; /* Suurempi marginaali työpöytänäkymässä */
-        padding-right: 70px;
+
+
+
+.topnav .nav-links a.active {
+    background-color: #85d2d0;
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav-links-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start; /* Tasataan vasemmalle mobiilissa */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #887bb0; /* Mobiilinavigaation taustaväri */
+    width: 50%; /* Muutetaan mobiilinavigaation leveys puoleksi sivusta */
+}
+
+.nav-links-mobile a {
+    padding: 15px;
+    width: 100%;
+    text-align: left; /* Tasataan tekstit vasemmalle mobiilissa */
+    background-color: #887bb0; /* Mobiilinavigaation linkkien taustaväri */
+    color: white;
+}
+
+.nav-links-mobile.active {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .topnav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 }
+
 /* Kuvagallerian tyylit */
 .image-grid {
     display: grid;
@@ -60,5 +114,96 @@ img {
 @media (max-width: 768px) {
     .image-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Laatikot (box) */
+.box-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 laatikkoa rinnakkain työpöydällä */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 10%; /* Lisää marginaalia laatikoiden ympärille */
+}
+
+.box {
+    background-color: #887bb0;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0;
+    font-size: 1em;
+    padding-left: 20px; /* Lisää marginaalia leipätekstiin */
+}
+
+/* Mobiilinäkymän tyylit */
+@media (max-width: 768px) {
+    .box-grid {
+        grid-template-columns: 1fr; /* Laatikoiden asettelu allekkain mobiilissa */
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+/* Alasivujen tyylit */
+.image-description {
+    display: flex; /* Aseta kuva ja leipäteksti vierekkäin */
+    align-items: flex-start; /* Tasaa kuva ja teksti ylhäältä */
+    margin-bottom: 20px; /* Lisää tilaa alaosaan */
+    padding: 0 15%; /* Lisää marginaalia vasemmalle ja oikealle */
+}
+
+h1 { /* Lisätään tyylit otsikolle */
+    text-align: center;
+    margin-bottom: 20px; /* Lisää tilaa otsikon alle */
+    margin-top: 20px; /* Lisää tilaa otsikon alle */
+    font-size: 50px;
+
+}
+
+.main-image {
+    width: 200px; /* Aseta kuva pienemmäksi työpöytänäkymässä */
+    height: auto; /* Säilytä kuvasuhde */
+    margin-right: 20px; /* Lisää tilaa kuvan ja leipätekstin väliin */
+}
+
+@media (max-width: 767px) {
+    .main-image {
+        width: 65%; /* Pienennä kuvaa mobiilissa */
+        height: auto;
+        margin-bottom: 20px; /* Lisää marginaalia kuvan ja tekstin väliin mobiilissa */
+        margin-left: 20px; /* Lisää tilaa vasemmalle mobiilissa */
+    }
+
+    .image-description {
+        flex-direction: column;
+        align-items: flex-start; /* Tasaa teksti vasemmalle */
+        text-align: left; /* Varmista, että teksti on vasemmalla mobiilinäkymässä */
+        padding: 0 20px; /* Lisää marginaalia mobiiliversion leipätekstiin */
+    }
+
+    h1 { /* Tasataan myös mobiiliversion otsikko */
+        align-items: center;
+        font-size: 32px;
     }
 }
