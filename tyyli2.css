@@ -46,19 +46,19 @@ body {
 .nav-links-mobile {
     display: none;
     flex-direction: column;
-    align-items: flex-start; /* Tasataan vasemmalle mobiilissa */
+    align-items: flex-start; 
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #5F5086; /* Mobiilinavigaation taustaväri */
-    width: 50%; /* Muutetaan mobiilinavigaation leveys puoleksi sivusta */
+    background-color: #5F5086; 
+    width: 50%; 
 }
 
 .nav-links-mobile a {
     padding: 15px;
     width: 100%;
-    text-align: left; /* Tasataan tekstit vasemmalle mobiilissa */
-    background-color: #5F5086; /* Mobiilinavigaation linkkien taustaväri */
+    text-align: left; 
+    background-color: #5F5086; 
     color: white;
 }
 
@@ -117,13 +117,13 @@ img {
     }
 }
 
-/* Laatikot (box) */
+/* Laatikoiden asettelut */
 .box-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 laatikkoa rinnakkain työpöydällä */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     padding: 20px;
-    margin: 0 10%; /* Lisää marginaalia laatikoiden ympärille */
+    margin: 0 10%; 
 }
 
 .box {
@@ -136,9 +136,9 @@ img {
     transition: transform 0.3s ease;
 }
 .box-link {
-    display: block; /* Muutetaan linkki lohkoksi, jotta se vie koko tilan */
-    height: 100%; /* Varmistetaan, että linkki kattaa koko laatikon */
-    color: white; /* Linkin väri */
+    display: block; 
+    height: 100%; 
+    color: white; 
 }
 .box:hover {
     transform: scale(1.05);
@@ -157,13 +157,13 @@ h2 {
 p {
     margin: 0;
     font-size: 1em;
-    padding-left: 20px; /* Lisää marginaalia leipätekstiin */
+    padding-left: 20px; 
 }
 
-/* Mobiilinäkymän tyylit */
+/* Mobiilinäkymä */
 @media (max-width: 768px) {
     .box-grid {
-        grid-template-columns: 1fr; /* Laatikoiden asettelu allekkain mobiilissa */
+        grid-template-columns: 1fr; 
         margin-right: 20px;
         margin-left: 20px;
     }
@@ -171,42 +171,42 @@ p {
 
 /* Alasivujen tyylit */
 .image-description {
-    display: flex; /* Aseta kuva ja leipäteksti vierekkäin */
-    align-items: flex-start; /* Tasaa kuva ja teksti ylhäältä */
-    margin-bottom: 20px; /* Lisää tilaa alaosaan */
-    padding: 0 15%; /* Lisää marginaalia vasemmalle ja oikealle */
+    display: flex; 
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+    padding: 0 15%; 
 }
 
-h1 { /* Lisätään tyylit otsikolle */
+h1 { /
     text-align: center;
-    margin-bottom: 20px; /* Lisää tilaa otsikon alle */
-    margin-top: 20px; /* Lisää tilaa otsikon alle */
+    margin-bottom: 20px; 
+    margin-top: 20px; 
     font-size: 50px;
 
 }
 
 .main-image {
-    width: 200px; /* Aseta kuva pienemmäksi työpöytänäkymässä */
-    height: auto; /* Säilytä kuvasuhde */
-    margin-right: 20px; /* Lisää tilaa kuvan ja leipätekstin väliin */
+    width: 200px; 
+    height: auto; 
+    margin-right: 20px; 
 }
 
 @media (max-width: 767px) {
     .main-image {
-        width: 65%; /* Pienennä kuvaa mobiilissa */
+        width: 65%; 
         height: auto;
-        margin-bottom: 20px; /* Lisää marginaalia kuvan ja tekstin väliin mobiilissa */
-        margin-left: 20px; /* Lisää tilaa vasemmalle mobiilissa */
+        margin-bottom: 20px; 
+        margin-left: 20px; 
     }
 
     .image-description {
         flex-direction: column;
-        align-items: flex-start; /* Tasaa teksti vasemmalle */
-        text-align: left; /* Varmista, että teksti on vasemmalla mobiilinäkymässä */
-        padding: 0 20px; /* Lisää marginaalia mobiiliversion leipätekstiin */
+        align-items: flex-start; 
+        text-align: left; 
+        padding: 0 20px; 
     }
 
-    h1 { /* Tasataan myös mobiiliversion otsikko */
+    h1 { 
         align-items: flex-start;
         font-size: 24px;
         margin-top: 60px;
