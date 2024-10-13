@@ -117,7 +117,7 @@ img {
     }
 }
 
-/* Laatikoiden asettelut */
+/* Laatikot (box) */
 .box-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -138,7 +138,7 @@ img {
 .box-link {
     display: block; 
     height: 100%; 
-    color: white; 
+    color: white; /* Linkin väri */
 }
 .box:hover {
     transform: scale(1.05);
@@ -160,7 +160,7 @@ p {
     padding-left: 20px; 
 }
 
-/* Mobiilinäkymä */
+/* Mobiilinäkymän tyylit */
 @media (max-width: 768px) {
     .box-grid {
         grid-template-columns: 1fr; 
@@ -171,13 +171,13 @@ p {
 
 /* Alasivujen tyylit */
 .image-description {
-    display: flex; 
+    display: flex;
     align-items: flex-start; 
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     padding: 0 15%; 
 }
 
-h1 { /
+h1 { 
     text-align: center;
     margin-bottom: 20px; 
     margin-top: 20px; 
@@ -186,7 +186,7 @@ h1 { /
 }
 
 .main-image {
-    width: 200px; 
+    width: 200px;
     height: auto; 
     margin-right: 20px; 
 }
