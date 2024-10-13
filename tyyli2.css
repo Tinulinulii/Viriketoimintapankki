@@ -50,7 +50,7 @@ body {
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #887bb0; /* Mobiilinavigaation taustaväri */
+    background-color: #5F5086; /* Mobiilinavigaation taustaväri */
     width: 50%; /* Muutetaan mobiilinavigaation leveys puoleksi sivusta */
 }
 
@@ -58,7 +58,7 @@ body {
     padding: 15px;
     width: 100%;
     text-align: left; /* Tasataan tekstit vasemmalle mobiilissa */
-    background-color: #887bb0; /* Mobiilinavigaation linkkien taustaväri */
+    background-color: #5F5086; /* Mobiilinavigaation linkkien taustaväri */
     color: white;
 }
 
@@ -103,11 +103,11 @@ img {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #887bb0;
+    background-color: #5F5086;
     color: white;
     text-align: center;
     padding: 10px 0;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 /* Mobiilinäkymän tyylit */
@@ -127,7 +127,7 @@ img {
 }
 
 .box {
-    background-color: #887bb0;
+    background-color: #5F5086;
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -135,7 +135,11 @@ img {
     text-decoration: none;
     transition: transform 0.3s ease;
 }
-
+.box-link {
+    display: block; /* Muutetaan linkki lohkoksi, jotta se vie koko tilan */
+    height: 100%; /* Varmistetaan, että linkki kattaa koko laatikon */
+    color: white; /* Linkin väri */
+}
 .box:hover {
     transform: scale(1.05);
 }
@@ -203,7 +207,12 @@ h1 { /* Lisätään tyylit otsikolle */
     }
 
     h1 { /* Tasataan myös mobiiliversion otsikko */
-        align-items: left;
-        font-size: 25px;
+        align-items: flex-start;
+        font-size: 24px;
+        margin-top: 60px;
+        margin-right: 60px;
+       
     }
+
+    
 }
