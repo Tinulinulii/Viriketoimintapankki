@@ -203,7 +203,7 @@ h1 { /* Lisätään tyylit otsikolle */
     }
 
     h1 { /* Tasataan myös mobiiliversion otsikko */
-        align-items: center;
-        font-size: 32px;
+        align-items: left;
+        font-size: 25px;
     }
 }
